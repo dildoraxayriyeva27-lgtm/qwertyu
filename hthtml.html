@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O'zbek tilini tanituvchi sayt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;700&family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#bosh" class="logo">🇺🇿 O'zbek<span>Til</span></a>
+    <button class="burger" id="burger" aria-label="Menyu">☰</button>
+    <nav id="menu">
+      <a href="#bosh">Bosh sahifa</a>
+      <a href="#tarix">Til va tarix</a>
+      <a href="#maqsad">Maqsad</a>
+      <a href="#auditoriya">Auditoriya</a>
+      <a href="#darslar">Darslar</a>
+      <a href="#viktorina">Viktorina</a>
+      <a href="#xulosa">Xulosa</a>
+    </nav>
+  </header>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="bosh">
+    <div class="hero-art">
+      <div class="girl">
+        <div class="hair"></div>
+        <div class="face">😮</div>
+        <div class="body"><div class="notebook"></div></div>
+      </div>
+    </div>
+    <div class="hero-text reveal">
+      <h1>Rivojlangan davlatlar bilan hamkorlikda o'zbek tilini tanituvchi sayt</h1>
+      <a href="#viktorina" class="btn">Viktorinani boshlash →</a>
+      <p class="author">Shaxrizoda Mansurova, 45-maktab</p>
+    </div>
+  </section>
+
+  <!-- 2. TIL VA TARIX -->
+  <section class="section paper" id="tarix">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <h2 class="green-title reveal">O'zbek tili va tarix</h2>
+    <div class="two-col">
+      <div class="reveal">
+        <ul class="bold-list">
+          <li>O'zbek tili — <span class="counter" data-target="36">0</span> million odamning ona tili</li>
+          <li>Qadim madaniyat va tarix</li>
+        </ul>
+        <blockquote>
+          "O'zbek tili 36 million odam uchun ona tilidir. Bu til qadimdan boy tarix va madaniyatga ega.
+          Bu sayt orqali istalgan kishi tilni oson va qiziqarli o'rganadi."
+        </blockquote>
+      </div>
+      <div class="books reveal">
+        <div class="book bk1">📖</div>
+        <div class="book bk2">📚</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SAYTNING MAQSADI -->
+  <section class="section paper" id="maqsad">
+    <h2 class="big-title reveal">Saytning maqsadi</h2>
+    <div class="cards three">
+      <article class="card reveal"><div class="icon">🧠</div><p>Tilni o'rganish</p></article>
+      <article class="card reveal"><div class="icon">📖</div><p>Madaniyat va tarixni tanitish</p></article>
+      <article class="card reveal"><div class="icon">🧑‍💻</div><p>Interaktiv darslar va mini-testlar</p></article>
+    </div>
+  </section>
+
+  <!-- 4. MAQSADLI AUDITORIYA -->
+  <section class="section pink" id="auditoriya">
+    <h2 class="big-title reveal">Maqsadli auditoriya</h2>
+    <div class="two-col">
+      <ul class="plain-list reveal">
+        <li>🎓 Talabalar va o'qituvchilar</li>
+        <li>🌍 Til va madaniyat ishqibozlari</li>
+        <li>🤝 Rivojlangan davlatlarda hamkorlik qiluvchi tashkilotlar</li>
+      </ul>
+      <div class="table-art reveal">
+        <span>👩‍🏫</span><span>🧑‍🎓</span><span>👧</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DARSLAR -->
+  <section class="section paper" id="darslar">
+    <div class="two-col">
+      <div class="reader reveal">🧘‍♂️💻</div>
+      <div class="blue-card reveal">
+        <p>Onlayn darslar va mashqlar</p>
+        <p>Forum va mini-testlar</p>
+        <p>Madaniyat bilimi: video, rasm, faktlar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. INTERAKTIVLIK VA TEXNOLOGIYA -->
+  <section class="section paper" id="texnologiya">
+    <h2 class="big-title reveal">Interaktivlik<br>va texnologiya</h2>
+    <div class="two-col">
+      <ul class="plain-list reveal">
+        <li>🎯 Viktorinalar va mini-o'yinlar</li>
+        <li>📱 Mobil ilova va veb-platforma</li>
+        <li>🕒 24/7 ishlash imkoniyati</li>
+      </ul>
+      <div class="table-art reveal"><span>👧</span><span>👦</span><span>👩</span><span>🧑</span></div>
+    </div>
+  </section>
+
+  <!-- VIKTORINA (interaktiv) -->
+  <section class="section quiz-section" id="viktorina">
+    <h2 class="big-title reveal">Mini-viktorina</h2>
+    <div class="quiz reveal" id="quiz">
+      <div class="quiz-top">
+        <span id="qCount">1 / 5</span>
+        <span id="qScore">Ball: 0</span>
+      </div>
+      <h3 id="qText"></h3>
+      <div class="answers" id="answers"></div>
+      <p class="feedback" id="feedback"></p>
+      <button class="btn" id="nextBtn" disabled>Keyingisi →</button>
+    </div>
+  </section>
+
+  <!-- 7. GLOBAL AUDITORIYA -->
+  <section class="section paper" id="global">
+    <h2 class="big-title center reveal">Til va madaniyatni global auditoriyaga tanitish</h2>
+    <div class="cards two">
+      <article class="card reveal"><div class="icon">🔥</div><p>Yoshlar qiziqishini oshirish</p></article>
+      <article class="card reveal"><div class="icon">🚀</div><p>Yangi kurslar va interaktiv bo'limlar</p></article>
+    </div>
+  </section>
+
+  <!-- 8. XULOSA -->
+  <section class="section paper" id="xulosa">
+    <div class="two-col">
+      <div class="reveal">
+        <h2 class="big-title">Xulosa :)</h2>
+        <p class="spaced-quote">"O'zbek tilini o'rganing va tariximizni butun dunyoga taniting!"</p>
+      </div>
+      <div class="stack reveal">📚</div>
+    </div>
+  </section>
+
+  <!-- 9. RAHMAT -->
+  <section class="thanks">
+    <h2 class="big-title reveal">E'tiboringiz uchun rahmat!</h2>
+    <div class="smile">🙂</div>
+  </section>
+
+  <footer>© 2025 O'zbekTil — Shaxrizoda Mansurova, 45-maktab</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
